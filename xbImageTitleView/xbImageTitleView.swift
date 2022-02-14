@@ -15,7 +15,7 @@ enum ImageTitleViewType {
     case imageRight
 }
 
-class xbImageTitleView: UIView {
+public class xbImageTitleView: UIView {
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -67,7 +67,7 @@ class xbImageTitleView: UIView {
         }
     }
     
-    @objc func tapAction(sender: xbImageTitleView) {
+    @objc fileprivate func tapAction(sender: xbImageTitleView) {
         if let block = self.tapActionBlock {
             block(self)
         }
@@ -127,7 +127,7 @@ class xbImageTitleView: UIView {
     }
     
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         
         var imgSize = imageSize
@@ -244,7 +244,7 @@ class xbImageTitleView: UIView {
     
     
     
-    @objc func btnAction(sender: UIButton) {
+    @objc fileprivate func btnAction(sender: UIButton) {
         
     }
     

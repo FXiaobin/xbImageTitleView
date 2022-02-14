@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7F3FAB0C27A0DB2E0055E7FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3FAB0B27A0DB2E0055E7FF /* AppDelegate.swift */; };
-		7F3FAB0E27A0DB2E0055E7FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3FAB0D27A0DB2E0055E7FF /* SceneDelegate.swift */; };
 		7F3FAB1027A0DB2E0055E7FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3FAB0F27A0DB2E0055E7FF /* ViewController.swift */; };
 		7F3FAB1327A0DB2E0055E7FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3FAB1127A0DB2E0055E7FF /* Main.storyboard */; };
 		7F3FAB1527A0DB300055E7FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3FAB1427A0DB300055E7FF /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 		4F5361E9DE0675DC65FDD11F /* Pods-xbImageTitleViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xbImageTitleViewDemo.release.xcconfig"; path = "Target Support Files/Pods-xbImageTitleViewDemo/Pods-xbImageTitleViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7F3FAB0827A0DB2E0055E7FF /* xbImageTitleViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xbImageTitleViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3FAB0B27A0DB2E0055E7FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F3FAB0D27A0DB2E0055E7FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7F3FAB0F27A0DB2E0055E7FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7F3FAB1227A0DB2E0055E7FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F3FAB1427A0DB300055E7FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 			children = (
 				7F3FAB1F27A0DC0E0055E7FF /* xbImageTitleView */,
 				7F3FAB0B27A0DB2E0055E7FF /* AppDelegate.swift */,
-				7F3FAB0D27A0DB2E0055E7FF /* SceneDelegate.swift */,
 				7F3FAB0F27A0DB2E0055E7FF /* ViewController.swift */,
 				7F3FAB1127A0DB2E0055E7FF /* Main.storyboard */,
 				7F3FAB1427A0DB300055E7FF /* Assets.xcassets */,
@@ -219,7 +216,6 @@
 			files = (
 				7F3FAB1027A0DB2E0055E7FF /* ViewController.swift in Sources */,
 				7F3FAB0C27A0DB2E0055E7FF /* AppDelegate.swift in Sources */,
-				7F3FAB0E27A0DB2E0055E7FF /* SceneDelegate.swift in Sources */,
 				7F3FAB2127A0DC0E0055E7FF /* xbImageTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
