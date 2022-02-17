@@ -8,11 +8,11 @@
 import UIKit
 import SnapKit
 
-enum ImageTitleViewType {
-    case imageTop
-    case imageBottom
-    case imageLeft
-    case imageRight
+public enum xbImageTitleViewType {
+    case xb_imageTop
+    case xb_imageBottom
+    case xb_imageLeft
+    case xb_imageRight
 }
 
 public class xbImageTitleView: UIView {
@@ -30,7 +30,7 @@ public class xbImageTitleView: UIView {
     
     var tapActionBlock: ((xbImageTitleView) -> Void)?
     
-    private var type: ImageTitleViewType = .imageTop
+    private var type: xbImageTitleViewType = .xb_imageTop
     private var space: CGFloat = 0.0
     private var imageSize: CGSize = .zero
     
@@ -47,7 +47,7 @@ public class xbImageTitleView: UIView {
     private var titleFontNormal: UIFont?
     private var titleFontSelected: UIFont?
     
-    var isSelected: Bool = false {
+    public var isSelected: Bool = false {
         didSet {
             
             if isSelected {
@@ -73,7 +73,7 @@ public class xbImageTitleView: UIView {
         }
     }
     
-    init(frame: CGRect, type: ImageTitleViewType, space: CGFloat, imageSize: CGSize) {
+    public init(frame: CGRect, type: xbImageTitleViewType, space: CGFloat, imageSize: CGSize) {
         super.init(frame: frame)
         
         self.type = type
@@ -95,7 +95,7 @@ public class xbImageTitleView: UIView {
     }
     
     
-    func setImageTitleView(image: String, title: String?, titleColor: UIColor, isSelected: Bool) {
+    public func setImageTitleView(image: String, title: String?, titleColor: UIColor, isSelected: Bool) {
        
         if isSelected {
             self.titleSelected = title
@@ -116,7 +116,7 @@ public class xbImageTitleView: UIView {
         self.isSelected = isSel
     }
     
-    func setImageTitleView(font: UIFont, isSelected: Bool) {
+    public func setImageTitleView(font: UIFont, isSelected: Bool) {
         if isSelected {
             self.titleFontSelected = font
         }else{
@@ -140,7 +140,7 @@ public class xbImageTitleView: UIView {
         
         var textH: CGFloat = 20.0
         var textW: CGFloat = 0.0
-        if type == .imageLeft || type == .imageRight{
+        if type == .xb_imageLeft || type == .xb_imageRight{
             textW = textSize(withText: titleLabel.text ?? "", attributes: [NSAttributedString.Key.font : titleLabel.font ?? UIFont.systemFont(ofSize: 14.0)], limitWidth: self.bounds.width).width
             allWidth += textW
             allWidth += space
@@ -156,7 +156,7 @@ public class xbImageTitleView: UIView {
        
         
         switch type {
-        case .imageTop:
+        case .xb_imageTop:
             
             self.containerView.snp_remakeConstraints { make  in
                 make.center.equalToSuperview()
@@ -176,7 +176,7 @@ public class xbImageTitleView: UIView {
             
         break
             
-        case .imageBottom:
+        case .xb_imageBottom:
             
             self.containerView.snp_remakeConstraints { make  in
                 make.center.equalToSuperview()
@@ -197,7 +197,7 @@ public class xbImageTitleView: UIView {
             
         break
             
-        case .imageLeft:
+        case .xb_imageLeft:
             
             self.containerView.snp_remakeConstraints { make  in
                 make.center.equalToSuperview()
@@ -217,7 +217,7 @@ public class xbImageTitleView: UIView {
             
         break
             
-        case .imageRight:
+        case .xb_imageRight:
             
             self.containerView.snp_remakeConstraints { make  in
                 make.center.equalToSuperview()
